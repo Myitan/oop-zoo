@@ -1,6 +1,6 @@
-package com.epam.rd;
+package com.epam.training.oop;
 
-import com.epam.rd.animals.Animal;
+import com.epam.training.oop.animals.Animal;
 
 public class Zookeeper {
     private final String name;

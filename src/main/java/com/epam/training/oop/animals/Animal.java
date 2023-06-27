@@ -1,4 +1,4 @@
-package com.epam.rd.animals;
+package com.epam.training.oop.animals;
 
 public abstract class Animal {
 

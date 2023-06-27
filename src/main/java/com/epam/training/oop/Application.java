@@ -1,6 +1,6 @@
-package com.epam.rd;
+package com.epam.training.oop;
 
-import com.epam.rd.animals.*;
+import com.epam.training.oop.animals.*;
 
 public class Application {
     public static void main(String[] args) {
