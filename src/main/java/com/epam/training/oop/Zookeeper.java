@@ -4,16 +4,18 @@ import com.epam.training.oop.animals.Animal;
 
 public class Zookeeper {
     private final String name;
-    private final Animal[] species;
-    public Zookeeper(String name, Animal[] species) {
+    private final Consumption[] consumption;
+
+    public Zookeeper(String name, Consumption... consumption) {
         this.name = name;
-        this.species = species;
+        this.consumption = consumption;
     }
+
 
     public void feed(Animal[] animals) {
         for (Animal animal : animals) {
-            for (Animal specie : species) {
-                if (specie.getClass() == animal.getClass()) {
+            for (Consumption form : consumption) {
+                if (form.equals(animal.getFormOfConsumption())) {
                     animal.makeSound();
                     System.out.println(name + " is feeding the " + animal.getClass().getSimpleName());
                 }

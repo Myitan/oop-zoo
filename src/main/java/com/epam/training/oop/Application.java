@@ -11,15 +11,15 @@ public class Application {
     private void run() {
         Zoo zoo = new Zoo(
                 new Zookeeper[]{
-                        new Zookeeper("John", new Animal[]{new Zebra(), new Antelope(), new Hippo()}),
-                        new Zookeeper("Jane", new Animal[]{new Rhino(), new Lion(), new Mandrill()})},
+                        new Zookeeper("John", Consumption.HERBIVORES),
+                        new Zookeeper("Jane", Consumption.CARNIVORES, Consumption.OMNIVORES)},
                 new Animal[]{
-                        new Zebra(), new Zebra(), new Zebra(),
-                        new Antelope(), new Antelope(), new Antelope(), new Antelope(),
-                        new Hippo(), new Hippo(),
-                        new Rhino(), new Rhino(), new Rhino(),
-                        new Lion(), new Lion(),
-                        new Mandrill(), new Mandrill(), new Mandrill(), new Mandrill()
+                        new Zebra(Consumption.HERBIVORES), new Zebra(Consumption.HERBIVORES), new Zebra(Consumption.HERBIVORES),
+                        new Antelope(Consumption.HERBIVORES), new Antelope(Consumption.HERBIVORES), new Antelope(Consumption.HERBIVORES), new Antelope(Consumption.HERBIVORES),
+                        new Hippo(Consumption.HERBIVORES), new Hippo(Consumption.HERBIVORES),
+                        new Rhino(Consumption.HERBIVORES), new Rhino(Consumption.HERBIVORES), new Rhino(Consumption.HERBIVORES),
+                        new Lion(Consumption.CARNIVORES), new Lion(Consumption.CARNIVORES),
+                        new Mandrill(Consumption.OMNIVORES), new Mandrill(Consumption.OMNIVORES), new Mandrill(Consumption.OMNIVORES), new Mandrill(Consumption.OMNIVORES)
                 });
         zoo.feedtime();
     }
