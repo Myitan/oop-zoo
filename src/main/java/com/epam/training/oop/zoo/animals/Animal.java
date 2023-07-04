@@ -14,7 +14,7 @@ public abstract class Animal {
 
     public abstract void makeSound();
 
-    public Consumption getFormOfConsumption() {
+    public Consumption getConsumption() {
         return consumption;
     }
 

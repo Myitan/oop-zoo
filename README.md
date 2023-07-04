@@ -19,19 +19,19 @@ There are two zookeepers with different food specializations
 
 The Zoo houses animals of 6 distinct types
 
-| Animal | Consumption |
-|---|---|
-| Antelope | `Herbivore` |
-| Hippo | `Herbivore` |
-| Lion | `Carnivore` |
-| Mandrill | `Omnivore` |
-| Rhino | `Herbivore` |
-| Zebra | `Herbivore` |
+| Animal | Consumption | Sound |
+|---|---|---|
+| Antelope | `Herbivore` | snorts |
+| Hippo | `Herbivore` | barks |
+| Lion | `Carnivore` | roars |
+| Mandrill | `Omnivore` | screams |
+| Rhino | `Herbivore` | moos |
+| Zebra | `Herbivore` | brays |
 
 Based on the previous table, it can be determined that John will be able to feed an Antelope,
 and Jane can feed a Mandrill.
 
-The task is to implement the Zoo's `feedtime()` and Zookeeper's `feed()` methods
+The task is to implement the Zoo's `feedtime()`, each animals' `makeSound()` and the Zookeeper's `feed()` methods 
 to print out strings to a new line (`System.out.println()`) when the Zoo's feedtime method is called.
 First, make sure that animal classes call their `makeSound()` method whenever being fed, and after that
 the output log should contain which zookeeper (by its name) is feeding which animal.
@@ -42,9 +42,9 @@ When John the zookeeper tries to give food to these animals -> [ Antelope, Hippo
 
 The output should be as follows:
 ```
-Sage the Antelope snorts.
+Sage the Antelope snorts
 John is feeding Sage the Antelope
-Bubbles the Hippo barks.
+Bubbles the Hippo barks
 John is feeding Bubbles the Hippo
 ```
 First, the log output contains info about the animal making a sound, and then gives more information
@@ -52,5 +52,10 @@ about which zookeeper is feeding which animal.
 
 The lion should NOT be present, since John cannot give food to carnivores or omnivores.
 
+
+### Example makeSound output
+```
+Sage the Antelope snorts
+```
 ---
 Please do not change method names, arguments, or return type of the methods.

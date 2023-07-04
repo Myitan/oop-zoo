@@ -9,6 +9,5 @@ public class Zebra extends Animal {
 
     @Override
     public void makeSound() {
-        System.out.println(getName() + " the " + this.getClass().getSimpleName() + " brays.");
     }
 }

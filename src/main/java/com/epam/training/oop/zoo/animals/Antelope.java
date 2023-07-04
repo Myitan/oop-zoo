@@ -9,6 +9,5 @@ public class Antelope extends Animal {
 
     @Override
     public void makeSound() {
-        System.out.println(getName() + " the " + this.getClass().getSimpleName() + " snorts.");
     }
 }
