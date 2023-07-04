@@ -31,9 +31,6 @@ class ZookeeperTest {
     private static final Animal ANTELOPE = new Antelope("Luna");
     private static final Animal HIPPO = new Hippo("Bubbles");
     private static final Animal LION = new Lion("Leo");
-    private static final Animal MANDRILL = new Mandrill("Kaya");
-    private static final Animal RHINO = new Rhino("Brutus");
-    private static final Animal ZEBRA = new Zebra("Stripes");
     private static final String LEO_LION_ROAR = "Leo the Lion roars";
     private static final String JANE_LEO_FEEDING = "Jane is feeding Leo the Lion";
 
