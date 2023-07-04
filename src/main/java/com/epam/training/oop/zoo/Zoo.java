@@ -1,6 +1,6 @@
-package com.epam.training.oop;
+package com.epam.training.oop.zoo;
 
-import com.epam.training.oop.animals.Animal;
+import com.epam.training.oop.zoo.animals.Animal;
 
 public class Zoo {
 
@@ -13,8 +13,6 @@ public class Zoo {
     }
 
     public void feedtime() {
-        for (Zookeeper zookeeper : zookeepers) {
-            zookeeper.feed(animals);
-        }
+
     }
 }
