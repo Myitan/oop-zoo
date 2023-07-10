@@ -1,27 +1,18 @@
 package com.epam.training.oop.zoo;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-import java.util.stream.Stream;
-
 import com.epam.training.oop.zoo.animals.Animal;
 import com.epam.training.oop.zoo.animals.Antelope;
 import com.epam.training.oop.zoo.animals.Hippo;
 import com.epam.training.oop.zoo.animals.Lion;
-import com.epam.training.oop.zoo.animals.Mandrill;
-import com.epam.training.oop.zoo.animals.Rhino;
-import com.epam.training.oop.zoo.animals.Zebra;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.MethodSource;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class ZookeeperTest {
 
