@@ -9,5 +9,6 @@ public class Rhino extends Animal {
 
     @Override
     public void makeSound() {
+        System.out.println(this.getName() + " the Rhino moos");
     }
 }

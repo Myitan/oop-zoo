@@ -13,6 +13,8 @@ public class Zoo {
     }
 
     public void feedtime() {
-
+        for (Zookeeper zookeeper : zookeepers){
+            zookeeper.feed(animals);
+        }
     }
 }

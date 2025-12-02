@@ -9,5 +9,6 @@ public class Mandrill extends Animal {
 
     @Override
     public void makeSound() {
+        System.out.println(this.getName() + " the Mandrill screams");
     }
 }

@@ -13,7 +13,15 @@ public class Zookeeper {
 
 
     public void feed(Animal[] animals) {
-
+        for (Animal animal : animals){
+            for (Consumption consumption1 : consumption){
+                if (consumption1 == animal.getConsumption()){
+                    animal.makeSound();
+                    System.out.println(this.name + " is feeding " + animal.getName() + " the " + animal.getClass().getSimpleName());
+                    break;
+                }
+            }
+        }
     }
 
     public String getName() {

@@ -9,5 +9,7 @@ public class Lion extends Animal {
 
     @Override
     public void makeSound() {
+        System.out.println(this.getName() + " the Lion roars");
+
     }
 }
